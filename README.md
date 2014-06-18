@@ -3,13 +3,16 @@ TetrisSFML
 
 Projet IHM 2014
 
+Pour lancer le programme, il suffit d'exécuter le SFMLTetris_win32.exe dans le dossier CodeBlocks pour jouer à notre Tetris.
+
+Nous conseillons d'ouvrir le fichier .cbp pour ouvrir les sources sous CodeBlocks, les librairies et autres dépendences sont fourni dans le dossier Codeblocks.
+
 Auteurs
 =============
 Auteur: Alexandre Pavy,
         Jimmy Schiaratura,
         Gabriel Lefevre et
         Quentin Dangreville
-
 
 
 Licence
