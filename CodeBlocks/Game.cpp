@@ -52,42 +52,47 @@ Game::Game(sf::Vector2i * window_size) :
 Game::~Game() {}
 
 //évenement des touches de clavier
+
+
 void Game::onEvent(sf::Event & event)
 {
     switch(event.type)
     {
         case sf::Event::KeyPressed:
-            switch(event.key.code)
-            {
-                case sf::Keyboard::Left:
+            if(event.key.code == sf::Keyboard::Left){
                     matrix.moveLeft();
-                break;
-                case sf::Keyboard::Right:
-                    matrix.moveRight();
-                break;
-                case sf::Keyboard::Down:
-                    matrix.MoveDown();
-                    setTimeLastMoveDown();
-                break;
-                case sf::Keyboard::Up:
-                    matrix.HardDrop();
-                break;
-                case sf::Keyboard::Space:
-                    matrix.rotateRight();
-                break;
-                case sf::Keyboard::Return:
-                    _replay = 1;
-                break;
-                case sf::Keyboard::S:
-                    _music.pause();
-                break;
-                case sf::Keyboard::P:
-                    _music.play();
-                break;
             }
+
+            if(event.key.code == sf::Keyboard::Right){
+                    matrix.moveRight();
+            }
+            if(sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+            {
+                _music.pause();
+            }
+            if(sf::Keyboard::isKeyPressed(sf::Keyboard::P))
+            {
+                _music.play();
+            }
+            if(event.key.code == sf::Keyboard::Down){
+                matrix.MoveDown();
+                setTimeLastMoveDown();
+            }
+            if(event.key.code == sf::Keyboard::Up){
+                matrix.HardDrop();
+            }
+            if(event.key.code == sf::Keyboard::Space)
+            {
+                    matrix.rotateRight();
+            }
+            if(event.key.code == sf::Keyboard::Return)
+                _replay = 1;
+
         break;
         default: break;
     }
+
+
 }
 
 bool Game::nextPiece(bool cancelCountTetromino = false)
