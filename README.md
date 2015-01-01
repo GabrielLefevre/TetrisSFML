@@ -19,12 +19,6 @@ Licence
 =============
 La licence MIT (MIT)
 
-Copyright (c) 2014 
-        Alexandre Pavy,
-        Jimmy Schiaratura,
-        Gabriel Lefevre and
-        Quentin Dangreville
-        
 L'autorisation est accordée, gratuitement, à toute personne obtenant une copie
 de ce logiciel et de la documentation associée (le «Logiciel»), pour faire face
 dans le logiciel sans restriction, y compris, sans limitation, les droits
