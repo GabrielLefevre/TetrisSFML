@@ -12,7 +12,7 @@ Auteurs
 Auteur: Alexandre Pavy,
         Jimmy Schiaratura,
         Gabriel Lefevre et
-        Quentin Dangreville
+        Quentin Dengreville
 
 
 Licence
